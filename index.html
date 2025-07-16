@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>البوابة الإلكترونية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cairo',sans-serif;background:#f1f1f1;color:#333;line-height:1.6}
+header{background:#fff;padding:10px 20px;box-shadow:0 2px 4px rgba(0,0,0,0.1)}
+header .top-nav{display:flex;justify-content:space-between;align-items:center;font-size:14px}
+header .top-nav a{margin:0 8px;color:#333;text-decoration:none}
+section.hero{position:relative;height:60vh;overflow:hidden}
+.hero video{width:100%;height:100%;object-fit:cover}
+.hero .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.3)}
+.hero .title{position:absolute;top:50%;right:20px;transform:translateY(-50%);color:#fff;font-size:32px;font-weight:600;border-bottom:4px solid #4a90e2;display:inline-block;padding-bottom:4px}
+.news{padding:40px 20px;background:#fff}
+.news .section-title{font-size:28px;font-weight:600;margin-bottom:20px;text-align:right}
+.carousel{display:flex;overflow-x:auto;scroll-behavior:smooth}
+.card{flex:0 0 300px;background:#fff;margin-left:20px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);overflow:hidden}
+.card:first-child{margin-left:0}
+.card img{width:100%;height:180px;object-fit:cover}
+.card .body{padding:16px;text-align:right}
+.card .body h3{font-size:18px;font-weight:600;margin-bottom:8px}
+.card .body p{font-size:14px;color:#555;margin-bottom:12px}
+.card .body a{display:inline-block;padding:6px 12px;background:#28a745;color:#fff;border-radius:4px;text-decoration:none;font-size:14px}
+.card .footer{padding:8px 16px;border-top:1px solid #eee;font-size:13px;color:#777;text-align:right}
+.stats{padding:40px 20px;display:flex;justify-content:center;background:#fff}
+.stats .item{flex:1;text-align:center;padding:0 10px}
+.stats .item i{font-size:36px;color:#28a745;margin-bottom:8px}
+.stats .item h3{font-size:24px;font-weight:600;margin-bottom:8px}
+.stats .item p{font-size:14px;color:#555}
+.services{padding:40px 20px;background:#fff}
+.services .section-title{font-size:28px;font-weight:600;margin-bottom:20px;text-align:right}
+.services .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px}
+.services .card{background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);overflow:hidden;text-align:right}
+.services .card .icon{font-size:36px;color:#28a745;padding:20px}
+.services .card .body{padding:16px}
+.services .card .body h3{font-size:18px;font-weight:600;margin-bottom:8px}
+.services .card .body p{font-size:14px;color:#555;margin-bottom:12px}
+.services .card .body a{display:inline-block;padding:6px 12px;background:#28a745;color:#fff;border-radius:4px;text-decoration:none;font-size:14px}
+footer{background:#004d26;color:#fff;padding:40px 20px}
+footer .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:20px;text-align:right}
+footer a{color:#fff;text-decoration:none;font-size:14px}
+footer a:hover{text-decoration:underline}
+@media(max-width:768px){.stats{flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="top-nav">
+    <div>
+      <a href="index.html">عن الجامعة</a>
+      <a href="login.html">بوابة الفعاليات</a>
+      <a href="contact.html">التواصل</a>
+    </div>
+    <div>الاثنين 19 محرم 1447 / 14 يوليو 2025</div>
+  </div>
+</header>
+<section class="hero">
+  <img src="https://ar.pressbee.net/images/news/14-07-25-647385881.jpg" width="100%" height="100%" alt="">
+  <div class="overlay"></div>
+  <h1 class="title">البوابة الإلكترونية لجامعة جازان</h1>
+</section>
+<section class="news">
+  <h2 class="section-title">الأخبار</h2>
+  <div class="carousel">
+    <div class="card"><img src="https://haqayq-news.com/wp-content/uploads/2025/07/8b2525c7-3ff3-407b-a2a8-7bc130f4fa10.jpeg">
+      <div class="body"><h3>جامعة جازان وفرع وزارة الصحة...</h3><p>جددت جامعة جازان فرع وزارة الصحة...</p><a href="#">إقرأ المزيد</a></div><div class="footer">14 محرم 1447</div></div>
+    <div class="card"><img src="https://media.assettype.com/sabq%2F2025-07-10%2Fmaha8t5f%2FPHOTO-2025-07-10-13-26-28.jpg">
+      <div class="body"><h3>جامعة جازان تستضيف برنامج...</h3><p>في إطار...</p><a href="#">إقرأ المزيد</a></div><div class="footer">14 محرم 1447</div></div>
+    <div class="card"><img src="https://media.assettype.com/ajel%2F2025-07-08%2Fjssqii29%2FCapture.PNG">
+      <div class="body"><h3>جامعة جازان تشارك في ملتقى...</h3><p>شارك وفد...</p><a href="#">إقرأ المزيد</a></div><div class="footer">13 محرم 1447</div></div>
+        <div class="card"><img src="https://wakebeconomic.com/wp-content/uploads/2025/07/IMG-20250709-WA0144.jpg"><div class="body"><h3>جامعة جازان تشارك في ملتقى...</h3><p>شارك وفد...</p><a href="#">إقرأ المزيد</a></div><div class="footer">13 محرم 1447</div></div>
+            <div class="card"><img src="https://portalcdn.spa.gov.sa/backend/original/202507/Jwzkjc01OUbqknuJa8GEcxc536eb8k5fTMhIU6kt.jpg"><div class="body"><h3>جامعة جازان تشارك في ملتقى...</h3><p>شارك وفد...</p><a href="#">إقرأ المزيد</a></div><div class="footer">13 محرم 1447</div></div>
+  </div>
+</section>
+<section class="stats">
+  <div class="item"><i class="fas fa-university"></i><h3>600</h3><p>ترتيب الجامعة عالمياً</p></div>
+  <div class="item"><i class="fas fa-book"></i><h3>28</h3><p>كلية ومعهد</p></div>
+  <div class="item"><i class="fas fa-graduation-cap"></i><h3>350</h3><p>برامج أكاديمية</p></div>
+</section>
+<section class="services">
+  <h2 class="section-title">خدمات الطلاب</h2>
+  <div class="grid">
+    <div class="card"><div class="icon"><i class="fas fa-laptop"></i></div><div class="body"><h3>نظام التعليم الإلكتروني</h3><p>منصة Blackboard Learn للطلاب وأعضاء الهيئة التدريسية.</p><a href="#">بدء الخدمة</a></div></div>
+    <div class="card"><div class="icon"><i class="fas fa-calendar-alt"></i></div><div class="body"><h3>التقويم الجامعي</h3><p>جدول الفصول الدراسية والاختبارات والإجازات.</p><a href="#">بدء الخدمة</a></div></div>
+    <div class="card"><div class="icon"><i class="fas fa-id-card"></i></div><div class="body"><h3>النظام الأكاديمي</h3><p>إدارة السجلات الأكاديمية للطلاب والتسجيل.</p><a href="#">بدء الخدمة</a></div></div>
+    <div class="card"><div class="icon"><i class="fas fa-envelope"></i></div><div class="body"><h3>البريد الإلكتروني للطلاب</h3><p>حساب Office 365 الطلابي.</p><a href="#">بدء الخدمة</a></div></div>
+    <div class="card"><div class="icon"><i class="fas fa-file-alt"></i></div><div class="body"><h3>خدمة طلب إعتذار</h3><p>تقديم طلب إعتذار عن فصل دراسي.</p><a href="#">بدء الخدمة</a></div></div>
+    <div class="card"><div class="icon"><i class="fas fa-exchange-alt"></i></div><div class="body"><h3>التحويل الداخلي والخارجي</h3><p>خدمة التحويل الداخلي والخارجي للجامعة.</p><a href="#">بدء الخدمة</a></div></div>
+  </div>
+</section>
+<footer>
+  <div class="grid">
+    <div><h4>عن الجامعة</h4><a href="#">نبذة عن الجامعة</a><br><br>
+      <a href="#">الكليات</a><br><br><a href="#">المراكز والمعاهد</a><br></div>
+    <div><h4>روابط مهمة</h4><a href="#">المنصة الوطنية الموحدة</a><br><a href="#">الخدمات الإلكترونية</a><br></div>
+    <div><h4>التواصل والدعم</h4><a href="#">تواصل معنا</a><a href="#">الدعم الفني</a></div>
+  </div>
+</footer>
+</body>
+</html>

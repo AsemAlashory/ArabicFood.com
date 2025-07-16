@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الصفحة الرئيسية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Cairo',sans-serif;background:#f1f1f1;color:#333;line-height:1.6}
+    header{background:#fff;padding:10px 20px;box-shadow:0 2px 4px rgba(0,0,0,0.1)}
+    header .top-nav{display:flex;justify-content:space-between;align-items:center;font-size:14px}
+    header .top-nav a{margin:0 8px;color:#333;text-decoration:none;font-weight:500}
+    header .top-nav a:hover{text-decoration:underline}
+    .hero-home{position:relative;height:50vh;background:url('https://ar.pressbee.net/images/news/14-07-25-647385881.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:center}
+    .hero-home::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4)}
+    .hero-home h1{position:relative;color:#fff;font-size:3rem;font-weight:600;text-align:center;padding:0 20px}
+    .section{padding:40px 20px;background:#fff}
+    .section-title{font-size:28px;font-weight:600;margin-bottom:20px;text-align:right;color:#333}
+    .news .grid,.services .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+    .news .card,.services .card{background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);overflow:hidden;text-align:right;transition:transform .3s}
+    .news .card:hover,.services .card:hover{transform:translateY(-5px)}
+    .news .card img,.services .card img{width:100%;height:160px;object-fit:cover}
+    .news .card .body,.services .card .body{padding:16px}
+    .news .card h3,.services .card h3{font-size:1.2rem;font-weight:600;margin-bottom:8px}
+    .news .card p,.services .card p{font-size:0.95rem;color:#555;margin-bottom:12px}
+    .news .card a,.services .card a{display:inline-block;padding:8px 16px;background:#4a90e2;color:#fff;border-radius:4px;text-decoration:none;font-size:0.9rem;transition:background .3s}
+    .news .card a:hover,.services .card a:hover{background:#3a78c2}
+    .stats{display:flex;justify-content:space-around;flex-wrap:wrap;background:#fff;padding:40px 20px}
+    .stats .item{flex:1 1 200px;text-align:center;padding:20px}
+    .stats .item i{font-size:36px;color:#4a90e2;margin-bottom:10px}
+    .stats .item h3{font-size:2rem;font-weight:600;margin-bottom:8px}
+    .stats .item p{font-size:1rem;color:#555}
+    footer{background:#004d26;color:#fff;padding:40px 20px}
+    footer .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:20px;text-align:right}
+    footer a{color:#fff;text-decoration:none;font-size:14px}
+    footer a:hover{text-decoration:underline}
+    @media(max-width:768px){
+      .hero-home h1{font-size:2rem}
+      .stats{flex-direction:column;align-items:center}
+      .news .grid,.services .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="top-nav">
+      <div>
+        <a href="home.html">الرئيسية</a>
+        <a href="events.html">فعاليات</a>
+        <a href="contact1.html">تواصل</a>
+        <a href="index.html">تسجيل الخروج</a>
+      </div>
+      <div>الثلاثاء 20 محرم 1447 / 15 يوليو 2025</div>
+    </div>
+  </header>
+
+  <section class="hero-home">
+    <h1>مرحبا بكم في بوابة الفعاليات</h1>
+  </section>
+
+  <section class="section news">
+    <h2 class="section-title">آخر الأخبار</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZFMdzwTYRUJVmyBsGjg521fT2L0JiTcT7xg&s" alt="خبر 1">
+        <div class="body">
+          <h3>تدشين مختبر الحوسبة السحابية</h3>
+          <p>افتتحت الرؤية التقنية مختبر الحوسبة السحابية الجديد لخدمة مشاريع الطلاب والبحث العلمي.</p>
+          <a href="#">إقرأ المزيد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ4zl0M4RgSAjuWYE9G6oEGg2MFORY4YQbgw&s" alt="خبر 2">
+        <div class="body">
+          <h3>تعاون مع شركة تقنية رائدة</h3>
+          <p>أبرمت الرؤية التقنية اتفاقية تعاون مع شركة تقنية لتعزيز برامج التدريب والتوطين.</p>
+          <a href="#">إقرأ المزيد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZyD7UzoLRFUUIu-F4_NU0TvY-AMpt39dvKQ&s" alt="خبر 3">
+        <div class="body">
+          <h3>إطلاق ورشة تصميم الألعاب</h3>
+          <p>تنظم الرؤية التقنية ورشة متخصصة في تصميم وتطوير الألعاب باستخدام Unity للمبتدئين.</p>
+          <a href="#">إقرأ المزيد</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="item"><i class="fas fa-users"></i><h3>1500+</h3><p>عدد الطلاب المسجلين</p></div>
+    <div class="item"><i class="fas fa-code"></i><h3>120+</h3><p>مشاريع منجزة</p></div>
+    <div class="item"><i class="fas fa-award"></i><h3>35</h3><p>شهادة اعتماد دولية</p></div>
+  </section>
+
+  <section class="section services">
+    <h2 class="section-title">خدماتنا</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTutiu4XtI1v74u17xYYJzydz9b6XofPJ3QCQ&s" alt="خدمة 1">
+        <div class="body">
+          <h3>التدريب التقني</h3>
+          <p>دورات متخصصة في تطوير الويب وتطبيقات الهواتف باستخدام أحدث التقنيات.</p>
+          <a href="#">اكتشف المزيد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROBADYU0xyYkUwaD8yFWXNR5kRD8Kdq3LlRQ&s" alt="خدمة 2">
+        <div class="body">
+          <h3>الاستشارات التقنية</h3>
+          <p>خبراء متخصصون يقدمون استشارات في مجال أنظمة المعلومات والأمن السيبراني.</p>
+          <a href="#">اكتشف المزيد</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://portalcdn.spa.gov.sa/backend/original/202409/J6uVI3OI9jgkOMNQy4N8unEpDyyOwYMdhBi1HgNc.jpg" alt="خدمة 3">
+        <div class="body">
+          <h3>التسويق الرقمي</h3>
+          <p>خدمات متكاملة لتحسين ظهورك الرقمي واستراتيجيات التسويق عبر منصات التواصل.</p>
+          <a href="#">اكتشف المزيد</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="grid">
+      <div>
+        <h4>عن الرؤية التقنية</h4>
+        <a href="#">من نحن</a>
+        <a href="#">فريقنا</a>
+        <a href="#">قيمنا</a>
+      </div>
+      <div>
+        <h4>روابط سريعة</h4>
+        <a href="events.html">فعاليات</a>
+        <a href="contact.html">تواصل</a>
+        <a href="login.html">دخول</a>
+      </div>
+      <div>
+        <h4>تواصل معنا</h4>
+        <a href="#">info@ravtech.com</a>
+        <a href="#">+966 55 123 4567</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
